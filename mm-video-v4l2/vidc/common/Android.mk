@@ -32,7 +32,6 @@ endif
 libmm-vidc-inc      += $(call project-path-for,qcom-media)/mm-core/inc
 libmm-vidc-inc      += $(call project-path-for,qcom-media)/mm-video-v4l2/vidc/vdec/inc
 libmm-vidc-inc      += $(call project-path-for,qcom-media)/mm-video-v4l2/vidc/venc/inc
-libmm-vidc-inc      += $(TARGET_OUT_HEADERS)/qcom/display
 libmm-vidc-inc      += $(call project-path-for,qcom-media)/libc2dcolorconvert
 libmm-vidc-inc      += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
 
