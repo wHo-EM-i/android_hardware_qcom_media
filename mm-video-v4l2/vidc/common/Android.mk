@@ -1,6 +1,6 @@
 ROOT_DIR := $(call my-dir)
-
 include $(CLEAR_VARS)
+include $(LIBION_HEADER_PATH_WRAPPER)
 LOCAL_PATH:= $(ROOT_DIR)
 
 # ---------------------------------------------------------------------------------
@@ -24,8 +24,7 @@ endif
 # ---------------------------------------------------------------------------------
 
 libmm-vidc-inc      := $(LOCAL_PATH)/inc
-libmm-vidc-inc      += $(TOP)/system/core/libion/include
-libmm-vidc-inc      += $(TOP)/system/core/libion/kernel-headers
+libmm-vidc-inc      += $(LIBION_HEADER_PATHS)
 libmm-vidc-inc      += $(call project-path-for,qcom-media)/mm-core/inc
 libmm-vidc-inc      += $(call project-path-for,qcom-media)/mm-video-v4l2/vidc/vdec/inc
 libmm-vidc-inc      += $(call project-path-for,qcom-media)/mm-video-v4l2/vidc/venc/inc

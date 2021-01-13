@@ -1,5 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
+include $(LIBION_HEADER_PATH_WRAPPER)
 
 # ---------------------------------------------------------------------------------
 # 				Common definitons
@@ -102,8 +103,7 @@ endif
 
 # Common Includes
 libmm-venc-inc      := $(LOCAL_PATH)/inc
-libmm-venc-inc      += $(TOP)/system/core/libion/include
-libmm-venc-inc      += $(TOP)/system/core/libion/kernel-headers
+libmm-venc-inc      += $(LIBION_HEADER_PATHS)
 libmm-venc-inc      += $(call project-path-for,qcom-media)/mm-video-v4l2/vidc/common/inc
 libmm-venc-inc      += $(call project-path-for,qcom-media)/mm-core/inc
 libmm-venc-inc      += $(call project-path-for,qcom-media)/libstagefrighthw
