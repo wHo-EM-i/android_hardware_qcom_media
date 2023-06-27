@@ -103,7 +103,7 @@ struct venc_debug_cap {
 struct venc_ion {
     int dev_fd;
     int data_fd;
-    struct ion_allocation_data alloc_data;
+    struct ion_old_allocation_data alloc_data;
 };
 
 #endif

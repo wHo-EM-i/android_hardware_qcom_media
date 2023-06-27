@@ -452,7 +452,7 @@ class venc_dev
             int offset;
 #ifdef USE_ION
             int ion_device_fd;
-            struct ion_allocation_data alloc_data;
+            struct ion_old_allocation_data alloc_data;
             int ion_alloc_fd;
 #endif
         };

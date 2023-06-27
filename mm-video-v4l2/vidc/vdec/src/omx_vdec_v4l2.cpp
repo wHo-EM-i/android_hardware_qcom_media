@@ -7048,7 +7048,7 @@ OMX_ERRORTYPE  omx_vdec::allocate_output_buffer(
     int extra_idx = 0;
 #ifdef USE_ION
     int ion_device_fd =-1;
-    struct ion_allocation_data ion_alloc_data;
+    struct ion_old_allocation_data ion_alloc_data;
     struct ion_fd_data fd_ion_data;
 #endif
     if (!m_out_mem_ptr) {

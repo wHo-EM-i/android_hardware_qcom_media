@@ -102,7 +102,7 @@ struct vdec_bufferpayload {
 struct vdec_ion {
     int                        ion_fd_device;
     struct ion_fd_data         ion_fd_data;
-    struct ion_allocation_data ion_alloc_data;
+    struct ion_old_allocation_data ion_alloc_data;
 };
 
 typedef struct {
@@ -383,7 +383,7 @@ private:
 
     OMX_ERRORTYPE flush(unsigned int port_index);
 
-    int  ion_memory_alloc_map(struct ion_allocation_data *p_alloc_data,
+    int  ion_memory_alloc_map(struct ion_old_allocation_data *p_alloc_data,
                               struct ion_fd_data         *p_fd_data,
                               OMX_U32                     size,
                               OMX_U32                     alignment);

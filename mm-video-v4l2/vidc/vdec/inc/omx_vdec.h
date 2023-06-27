@@ -716,7 +716,7 @@ struct vdec_meta_buffers {
 struct vdec_ion {
     int dev_fd;
     int data_fd;
-    struct ion_allocation_data ion_alloc_data;
+    struct ion_old_allocation_data ion_alloc_data;
 };
 #endif
 
