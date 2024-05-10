@@ -4632,7 +4632,7 @@ OMX_ERRORTYPE omx_swvdec::flush(unsigned int port_index)
 /**
  * @brief Allocate & map ION memory.
  */
-int omx_swvdec::ion_memory_alloc_map(struct ion_old_allocation_data *p_alloc_data,
+int omx_swvdec::ion_memory_alloc_map(struct ion_allocation_data *p_alloc_data,
                                      struct ion_fd_data         *p_fd_data,
                                      OMX_U32                     size,
                                      OMX_U32                     alignment)
