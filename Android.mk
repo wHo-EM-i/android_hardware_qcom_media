@@ -16,10 +16,6 @@ ifeq ($(BOARD_USES_ADRENO), true)
 include $(QCOM_MEDIA_ROOT)/libc2dcolorconvert/Android.mk
 endif
 
-ifeq ($(TARGET_BOARD_AUTO),true)
-include $(QCOM_MEDIA_ROOT)/libsidebandstreamhandle/Android.mk
-endif
-
 endif
 
 endif
